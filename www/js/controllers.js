@@ -103,7 +103,7 @@ angular.module('starter.controllers', [])
       }else{
         var alertPopup = $ionicPopup.alert({
           title: 'Error!',
-          template: 'It doesn\'t like that search worked. Try again'
+          template: 'It doesn\'t look like that search worked. Try again'
         });
         $state.go("app.results")
         $ionicSideMenuDelegate.toggleLeft()

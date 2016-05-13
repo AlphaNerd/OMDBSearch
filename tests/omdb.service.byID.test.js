@@ -10,7 +10,7 @@ describe('Get data from OMDB api', function(){
 		browser.sleep(1000);
 
 		var value = element.all(by.css('.main-title')).evaluate('data.title');
-		// expect(value).toBeGreaterThan(0);
+
 	});
 
 	/*  

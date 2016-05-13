@@ -1,0 +1,38 @@
+<ion-view view-title="">
+  <ion-content class="padding">
+  	<div class="details-image"><a href="http://www.imdb.com/title/{{data.imdbID}}"><img ng-src="{{data.Poster}}"></a></div>
+    <div id="details-container" ng-if="data">
+    	<h3 class="main-title"><a href="http://www.imdb.com/title/{{data.imdbID}}">{{data.Title}} ({{data.Year}})</a></h3>
+    	<div class="detail-rating">
+    		<i class="ion-android-star"></i><div class="rating">{{data.imdbRating}}</div>
+    		<div class="votes">{{data.imdbVotes}} votes</div>
+    	</div>
+    	<div class="detail-sub-header">{{data.Rated}} | {{data.Runtime}} | {{data.Genre}} | {{data.Released}} | ({{data.Country}})  ( {{data.imdbID}} )</div>
+
+    	<div class="detail-plot">{{data.Plot}}</div>
+
+    	<div class="detail-sub-plot">
+    		<div ng-show="data.Director"><span class="bold">Director:</span> {{data.Director}}</div>
+	    	<div ng-show="data.Writers"><span class="bold">Writers:</span> {{data.Writers}}</div>
+	    	<div ng-show="data.Actors"><span class="bold">Actors:</span> {{data.Actors}}</div>
+	    	<div ng-show="data.Awards"><span class="bold">Awards:</span> {{data.Awards}}</div>
+	    </div>
+
+      <div id="data-charts">
+        <highchart style="width: 300px; height: 125px;" id="chart1" config="imdbStatConfig"></highchart>
+      </div>
+
+      <div id="rotten-tomatoes" ng-if="userSettings.tomatoes">
+      <img class="rotten-img" src="http://d2a5cgar23scu2.cloudfront.net/static/images/logos/rtlogo.png"/>
+        <ul class="tomato-list">
+          <li>Tomato Meter: {{data.tomatoMeter}}</li>
+          <li>Tomato Ranking: {{data.tomatoRating}}</li>
+          <li>Reviews: {{data.tomatoReviews}}</li>
+          <li>User Meter: {{data.tomatoUserMeter}}</li>
+          <li>User Rating: {{data.tomatoUserRating}}</li>
+          <li>User Reviews: {{data.tomatoUserReviews}}</li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

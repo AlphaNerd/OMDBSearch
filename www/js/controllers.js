@@ -19,13 +19,13 @@ angular.module('starter.controllers', [])
       })
       $omdbservice.searchOMDB(mySearch).then(function(res){ //retrieve data from OMDB
         $ionicLoading.hide();
-        if(res.Response == "True"){
+        if(res.Response == "True"){ /// check for valid return
           $scope.OMDB_RESULTS = res.Search; /// assign response to $scope
           $state.go("app.results",mySearch) /// 
         }else{
           var alertPopup = $ionicPopup.alert({
           title: 'Error!',
-            template: 'It doesn\'t like that search worked. Try again'
+            template: 'It doesn\'t look like that search worked. Try again'
           });
           $state.go("app.results")
           $ionicSideMenuDelegate.toggleLeft()
@@ -70,7 +70,7 @@ angular.module('starter.controllers', [])
   $omdbservice.searchOMDB($stateParams).then(function(res){
       $ionicLoading.hide()
       console.log(res);
-      if(res.Response == "True"){
+      if(res.Response == "True"){ /// check for valid return
         $scope.data = res; /// single record detail data
           $scope.imdbStatConfig = {  /// chart configuration
             options: {

@@ -16,6 +16,7 @@ angular.module('starter.services', [])
 
             $http.get("http://www.omdbapi.com/?"+searchtype+"="+search+"&y="+params.year+"&plot="+$rootScope.userSettings.plot+"&tomatoes=true&r="+$rootScope.userSettings.feedType)
             .success(function(data) {
+                console.log(data)
                 deferred.resolve(data); // resolve promise with data
             })
             .error(function(msg, code) {

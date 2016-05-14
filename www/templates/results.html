@@ -9,25 +9,18 @@
                 <h2>Jeff Coleman</h2>
                 <p>
                     <a href="mailto:colemanjeff@mac.com" class="subdued"><i class="ion-email"></i></a>
-                    <a href="tel:506-899-2546" class="subdued">506-899-2546</a>
+                    <a href="http://www.colemanjeff.com" class="subdued">www.colemanjeff.com</a>
                 </p>
             </div>
             <div class="item item-body">
-                <p>After reviewing the OMDB api and examples, I noticed they had their searches broken out into two top-level types. One using IMDB ID's which returns a single item, or via a String which will return many item references. I merged the two variations into one search section with the service detecting what type of request it is (via ID or Title). Below is a brief explanation of the steps taken to complete this project.</p>
-                <p><b>Framework: </b></p>
-                <p>I chose the Ionic Framework as its a natural showcase for Angularjs. I am familiar with this framework and felt that it's speed of production, ease of use, and simple UI development allowed for simpler production without the loss of quility UI/UX.</p>
-                <p><b>Service: </b></p>
+                <p><b>Service/Factory: </b></p>
                 <p>There is a single service that handles the connection to OMDB and the DOM. Uses promises ($q) to handle Asynchronous calls to API.</p>
                 <p><b>Controllers:</b></p>
                 <p>These are pretty straight forward and handle most of the logic. There is a Highcharts Config setup in the DetailsCtrl that works with highcharts-ng and the directive in the DOM. </p>
                 <p><b>App.js:</b></p>
                 <p>One parent route with child routes for individual sections etc. </p>
                 <p><b>Protractor.js:</b></p>
-                <p>All I can say here is THANK YOU! Wow, where has this been my whole life! lol Seriously though, I have had little exposure to Protractor until this project, and although I did not greatly expand on my unit tests etc, I very much see and understand the power of this practice and methodology now. It has become and will remain part of my everyday workflow regardless of the outcome of this opportunity. I'm very excited to use this more.</p>
-                <h3><b>Conclusion:</b></h3>
-                <p>I appreciate the time you have taken to speak with me on several occasions, and the great conversations and learning experiences that have already come from a short time of interaction with you and your team, testiment to the positive growth and results that can come from working within a great team and environment.</p>
-                <p>Sincerely,</p>
-                <p>Jeff Coleman</p>
+                <p>For unit testing and e2e testing</p>
             </div>
         </div>
         <ion-list ng-hide="!OMDB_RESULTS">

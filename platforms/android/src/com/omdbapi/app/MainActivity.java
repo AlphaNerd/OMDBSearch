@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.ionicframework.starter;
+package com.omdbapi.app;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

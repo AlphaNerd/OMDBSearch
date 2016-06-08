@@ -5,8 +5,8 @@ Can be found on the Ionic Marketplace @ http://market.ionic.io/user/84984
 
 **Requirements:**
 <ul>
-<li>- Node.js</li>
-<li>- Ionic Framework</li>
+<li>Node.js</li>
+<li>Ionic Framework</li>
 </ul>
 
 **Install/Setup**

@@ -3,15 +3,19 @@ Angular.js, Protractor.js, and Ionic Framework. Basic OMDB API app for searching
 
 Can be found on the Ionic Marketplace @ http://market.ionic.io/user/84984
 
-**Requirements:** 
-- Node.js
-- Ionic Framework
+**Requirements:**
+<ul>
+<li>- Node.js</li>
+<li>- Ionic Framework</li>
+<ul>
 
 **Install/Setup**
-1) clone the repo
-2) cd into your directory (ie. `$ cd OMDbApp`)
-3) install dependencies (ie. `$ sudo npm install`)
-4) run in browser (ie. `$ionic serve`)
+<ul>
+<li>clone the repo</li>
+<li>cd into your directory (ie. `$ cd OMDbApp`)</li>
+<li>install dependencies (ie. `$ sudo npm install`)</li>
+<li>run in browser (ie. `$ionic serve`)</li>
+</ul>
 
 If you want to build it out to a Mobile App, you will also need:
 1) For iPhone dev: XCode -SDK

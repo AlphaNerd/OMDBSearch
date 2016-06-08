@@ -18,5 +18,7 @@ Can be found on the Ionic Marketplace @ http://market.ionic.io/user/84984
 </ul>
 
 If you want to build it out to a Mobile App, you will also need:
-1) For iPhone dev: XCode -SDK
-2) For Android: Android Studio - SDK
+<ul>
+<li>For iPhone dev: XCode -SDK</li>
+<li>2) For Android: Android Studio - SDK</li>
+</ul>

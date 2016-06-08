@@ -7,7 +7,7 @@ Can be found on the Ionic Marketplace @ http://market.ionic.io/user/84984
 <ul>
 <li>- Node.js</li>
 <li>- Ionic Framework</li>
-<ul>
+</ul>
 
 **Install/Setup**
 <ul>
